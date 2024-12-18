@@ -13,14 +13,7 @@ xhost +SI:localhost:root
 
 source /etc/profile
 
+if [ -f ~/.alias ]; then
+	source ~/.alias
+fi
 
-#ALIAS
-alias fastfetch="fastfetch --config $HOME/.config/fastfetch/config"
-alias ll="ls -alh"
-alias docker="sudo docker"
-
-
-export PATH="$HOME/mpvpaper/build:$PATH"
-
-pfetch
-source /usr/share/nvm/init-nvm.sh

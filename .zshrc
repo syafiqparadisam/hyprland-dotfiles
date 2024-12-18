@@ -7,30 +7,20 @@ bindkey -e
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/syafiq/.zshrc'
 
-xhost +SI:localuser:root
+# Memuat alias dari file ~/.alias
+if [ -f ~/.alias ]; then
+    source ~/.alias
+fi
+
+bindkey "^[[H" beginning-of-line    # HOME ke awal baris
+bindkey "^[[F" end-of-line          # END ke akhir baris
+
+
 autoload -Uz compinit
 compinit
-
-export PATH=$HOME/.local/bin:$PATH
 
 eval "$(oh-my-posh init zsh --config ~/.poshthemes/catppuccin_mocha.omp.json)"
 
 eval "$(zoxide init zsh)"
 source <(fzf --zsh)
-
-export BAT_THEME="Dracula"
-
-alias ll="ls -lah"
-alias cat="bat"
-
-# End of lines added by compinstall
-plugins=(zsh-autosuggestions zsh-syntax-highlighting you-should-use zsh-bat)
-
-export PATH="$HOME/mpvpaper/build:$PATH"
-
-alias neofetch="neofetch --config ~/neofetch-themes/small/dotfetch.conf"
-neofetch
-source /usr/share/nvm/init-nvm.sh
-
-
 
