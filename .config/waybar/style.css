@@ -88,6 +88,11 @@ tooltip label {
   color: #282828;
 }
 
+#battery {
+  color: #282828;
+}
+
+
 #temperature.critical {
   background-color: red;
 }
