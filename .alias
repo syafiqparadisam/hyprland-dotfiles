@@ -16,7 +16,7 @@ export BAT_THEME="Dracula"
 alias cat="bat"
 
 alias neofetch="neofetch --config ~/neofetch-themes/small/dotfetch.conf"
-neofetch
+#neofetch
 
 
 

@@ -110,7 +110,7 @@
         "spacing": 10
     },
 "clock": {
-	"timezone": "Asia/Jakarta",
+    "timezone": "Asia/Jakarta",
     "interval": 1,
     "format": " 🕑  {:%H:%M} ",
     "format-alt": " 🕑  {:%H:%M  🗓️   %Y, %d %B, %A} ",
